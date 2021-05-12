@@ -63,6 +63,7 @@ Route::group(['middleware' => $Api_Version . '.app.auth.token'], function () use
 
         });
 
+        
         Route::group(['prefix' => 'employee'], function () use ($Api_Version) {
 
             Route::post('register', $Api_Version . '\employeeManagementController@saveEmployee');
